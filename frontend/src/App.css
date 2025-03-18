@@ -1,0 +1,65 @@
+/* Resume Style Profile Card */
+.profile-container {
+  max-width: 800px; /* Bigger for resume size */
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #1e1e1e;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  color: #f5f5f5;
+  text-align: left; /* Align left for resume style */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-container:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.8);
+}
+
+/* Header Styling */
+h1 {
+  font-size: 2.5rem;
+  color: #646cff;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #ccc;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+p strong {
+  color: #fff;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 1.5rem;
+  color: #61dafb;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #646cff;
+  padding-bottom: 0.5rem;
+}
+
+/* Add Space Between Sections */
+p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
